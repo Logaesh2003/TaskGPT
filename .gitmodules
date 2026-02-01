@@ -1,0 +1,9 @@
+[submodule "TaskGPT_LLM"]
+	path = TaskGPT_LLM
+	url = https://github.com/Logaesh2003/Task_Pilot_LLM.git
+[submodule "TaskGPT_DB"]
+	path = TaskGPT_DB
+	url = https://github.com/Logaesh2003/Task_Pilot_DB.git
+[submodule "TaskGPT_UI"]
+	path = TaskGPT_UI
+	url = https://github.com/Logaesh2003/Task_Pilot_UI.git
