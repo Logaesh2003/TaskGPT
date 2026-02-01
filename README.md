@@ -1,4 +1,4 @@
-# TaskGPT
+# TaskGPT Project
 
 TaskGPT is a modular AI-powered application composed of three core services:
 
@@ -12,6 +12,9 @@ All services communicate seamlessly through **FastAPI**, ensuring a robust, scal
 
 ## 🚀 Features
 
+- **Task Management**: Users can add tasks directly through the UI.
+- **AI Day Planner**: The LLM can intelligently plan a user’s day based on their tasks, priorities, and preferences.
+- **Subtask Generation**: The LLM can break down tasks into actionable subtasks for better productivity.
 - **Modular Design**: Separate services for UI, LLM, and DB, organized as Git submodules.
 - **AI Integration**: LangChain orchestration with Groq/OpenAI models for advanced task reasoning.
 - **Modern Frontend**: Angular-based UI with Python backend hooks.
@@ -21,17 +24,17 @@ All services communicate seamlessly through **FastAPI**, ensuring a robust, scal
 ---
 
 ## 🏗️ Architecture
-+------------------+        +----------------+        +----------------+
-|   TaskGPT UI     | <----> |   FastAPI Hub  | <----> |   TaskGPT LLM  |
-| (Angular/Python) |        |                |        |   (LangChain)  |
-+------------------+        +----------------+        +----------------+
-        |                           |                         
-        |                           v                         
-        |                   +----------------+                 
-        +------------------>|   TaskGPT DB   |
-                            |  (PostgreSQL)  |
-                            +----------------+
 
++----------------+        +----------------+        +----------------+
+|   TaskGPT UI   | <----> |   FastAPI Hub  | <----> |   TaskGPT LLM  |
+| (Angular/Py)   |        |                |        | (LangChain)    |
++----------------+        +----------------+        +----------------+
+|                         |                         |
+|                         v                         |
+|                 +----------------+                |
++---------------> |   TaskGPT DB   | <---------------+
+|  (PostgreSQL)  |
++----------------+
 
 ---
 
