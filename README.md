@@ -21,28 +21,4 @@ All services communicate seamlessly through **FastAPI**, ensuring a robust, scal
 - **Reliable Storage**: PostgreSQL database with structured schema for task persistence.
 - **FastAPI Communication**: Lightweight, high-performance API layer connecting all services.
 
----
-
-## 🏗️ Architecture
-
-+----------------+        +----------------+        +----------------+
-|   TaskGPT UI   | <----> |   FastAPI Hub  | <----> |   TaskGPT LLM  |
-| (Angular/Py)   |        |                |        | (LangChain)    |
-+----------------+        +----------------+        +----------------+
-|                         |                         |
-|                         v                         |
-|                 +----------------+                |
-+---------------> |   TaskGPT DB   | <---------------+
-|  (PostgreSQL)  |
-+----------------+
-
----
-
-## 📂 Repository Structure
-TaskGPT/
-├── TaskGPT-UI/     # Angular + Python frontend
-├── TaskGPT-LLM/    # LangChain + Groq/OpenAI service
-├── TaskGPT-DB/     # PostgreSQL schema and DB service
-└── .gitmodules     # Submodule definitions
-
 
